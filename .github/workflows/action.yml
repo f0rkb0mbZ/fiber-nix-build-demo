@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Nix
+        uses: cachix/install-nix-action@v27
+
+      - name: Build with Nix
+        run: nix-build
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: result/bin/fiber-nix
