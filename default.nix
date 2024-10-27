@@ -14,8 +14,3 @@ pkgs.buildGoModule {
     platforms = platforms.linux;
   };
 }
-
-# mkdir -p $out/bin
-#     echo "$out"
-#     ls`
-#     cp fiber-nix $out/bin/
