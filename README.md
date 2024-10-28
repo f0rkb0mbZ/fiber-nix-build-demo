@@ -1,6 +1,11 @@
 # fiber-nix-build-demo
 A sample repo to demonstrate how to build go package using Nix. Push a version tag like v*.*.* to trigger a nix build of a simple Hello, World! api built with Fiber, a web framework of Golang.
 
+## Note
+This repository is a part of my presentation titled, **"Building declarative and reproducible systems with Nix"**.
+
+Find my slides here: [Slides Link](https://www.canva.com/design/DAGUjjoKwo0/0GhLy06L7R2BHBJDAuXCJw/view?utm_content=DAGUjjoKwo0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 ## Nix Cheatsheet
 
 ### Install Nix
